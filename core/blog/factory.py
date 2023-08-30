@@ -21,7 +21,7 @@ class PostFactory(factory.django.DjangoModelFactory):
     def content(self):
         x = ''
         for _ in range(5):
-            x += '\n' + FAKE.paragraph(nb_sentences=30) + '\n'
+            x += FAKE.paragraph(nb_sentences=30) + '\n'
         return x
 
     status = 'published'
